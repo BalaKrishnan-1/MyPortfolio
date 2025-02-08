@@ -843,7 +843,7 @@
       height:auto;
       padding:100px;
     }
-    .icon-1{
+    .icon{
       margin-left:40%!important;
       width:250px;
       height:50px;
@@ -854,10 +854,14 @@
       background-color:#fff!important;
       gap:25px!important;
     }
-   .icon a{
-    text-decoration: none!important;
-   }
-   #i-1{
+    .icon >a{
+      text-decoration: none!important; /* Remove underline for anchor tags */
+  }
+  
+  .icon> a:hover {
+      text-decoration: none!important; /* Ensure no underline appears on hover */
+  }
+   #i-1{ 
     background: #833ab4;
     background: linear-gradient(
       to right,
